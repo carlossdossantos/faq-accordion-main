@@ -1,0 +1,119 @@
+:root{
+    --white: hsl(0, 100%, 100%);
+    --purple-100: hsl(275, 100%, 97%);
+    --purple-600: hsl(292, 16%, 49%);
+    --purple-950: hsl(292, 42%, 14%) ;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--purple-100);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .card-faq{
+    width: min(100%, 500px);
+    max-width: 500px;
+    height: 500px;
+    background-color: var(--white);
+    padding: 40px;
+    align-items: flex-start;
+    z-index: 3;
+    position: relative;
+    bottom: 80px;
+    border-radius: 10px;
+}
+
+.card-faq-header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-faq h1{
+    font-size: 3rem;
+}
+
+.card-faq-questions{
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-faq-questions .text-description{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.35s ease;
+}
+
+.card-faq-questions .text-description.active{
+    max-height: 300px;
+    opacity: 1;
+}
+
+.card-faq-questions .text-questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card-faq-questions .text-questions .title{
+   display: block;
+}
+
+.card-faq-questions .text-questions .title:hover{
+   color: #AD28EB;
+}
+
+.card-faq-questions .text-description .text-info{
+    color: var(--purple-600);
+    font-size: 0.75rem;
+    padding-bottom: 20px;
+}
+
+.card-faq-questions .text-description .text-info.active{
+    display: none;
+}
+
+picture,
+picture img{
+    display: block;
+    width: 100%;
+}
+
+picture img{
+    object-fit: cover;
+    height: 320px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #eee;
+}
+
+@media screen and (max-width: 375px){
+
+    .card .card-faq{
+        max-width: 100%;
+        min-height: 600px;
+    }
+
+}
