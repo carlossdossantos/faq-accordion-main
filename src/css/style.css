@@ -25,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .card .card-faq{
@@ -47,13 +48,13 @@ body{
 }
 
 .card-faq h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .card-faq img{
-        width: 3rem;
-        height: 3rem;
-    }
+    width: 1.7rem;
+    height: 1.7rem;
+}
 
 .card-faq-questions{
     width: 100%;
@@ -77,11 +78,11 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    gap: 30px;
 }
 
 .card-faq-questions .text-questions .title{
    display: block;
-   font-size: 1rem;
 }
 
 .card-faq-questions .text-questions .title:hover{
@@ -90,7 +91,7 @@ body{
 
 .card-faq-questions .text-description .text-info{
     color: var(--purple-600);
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding-bottom: 20px;
 }
 
@@ -116,20 +117,13 @@ hr{
 }
 
 @media screen and (max-width: 1024px){
-    .card-faq h1{
-        font-size: 2.5rem;
-    }
-
-    .card-faq img{
-        width: 2.5rem;
-        height: 2.5rem;
-    }
 
     .card .card-faq{
         max-width: 100%;
         height: auto;
-        padding: 35px;
-        bottom: 35px;
+        padding: 20px;
+        position: relative;
+        bottom: 80px;
     }
 
     .card-faq-questions .text-questions .title{
@@ -142,20 +136,13 @@ hr{
 }
 
 @media screen and (max-width: 768px){
-    .card-faq h1{
-        font-size: 2rem;
-    }
-
-    .card-faq img{
-        width: 2rem;
-        height: 2rem;
-    }
 
     .card .card-faq{
         max-width: 100%;
         height: auto;
         padding: 20px;
-        bottom: 30px;
+        position: relative;
+        bottom: 80px;
     }
 
     .card-faq-questions .text-questions .title{
@@ -169,20 +156,12 @@ hr{
 
 @media screen and (max-width: 480px){
 
-    .card-faq h1{
-        font-size: 1.5rem;
-    }
-
-    .card-faq img{
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
     .card .card-faq{
         max-width: 100%;
         height: auto;
-        padding: 10px;
-        bottom: 25px;
+        padding: 20px;
+        position: relative;
+        bottom: 80px;
     }
 
     .card-faq-questions .text-questions .title{
@@ -197,20 +176,12 @@ hr{
 
 @media screen and (max-width: 375px){
 
-    .card-faq h1{
-        font-size: 1rem;
-    }
-
-    .card-faq img{
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
     .card .card-faq{
         max-width: 100%;
         height: auto;
-        padding: 5px;
-        bottom: 20px;
+        padding: 20px;
+        position: relative;
+        bottom: 80px;
     }
 
     .card-faq-questions .text-questions .title{
