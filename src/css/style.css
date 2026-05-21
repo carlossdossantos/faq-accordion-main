@@ -30,7 +30,7 @@ body{
 .card .card-faq{
     width: min(100%, 500px);
     max-width: 500px;
-    height: 500px;
+    height: auto;
     background-color: var(--white);
     padding: 40px;
     align-items: flex-start;
@@ -50,6 +50,11 @@ body{
     font-size: 3rem;
 }
 
+.card-faq img{
+        width: 3rem;
+        height: 3rem;
+    }
+
 .card-faq-questions{
     width: 100%;
     cursor: pointer;
@@ -63,7 +68,7 @@ body{
 }
 
 .card-faq-questions .text-description.active{
-    max-height: 300px;
+    max-height: 500px;
     opacity: 1;
 }
 
@@ -76,6 +81,7 @@ body{
 
 .card-faq-questions .text-questions .title{
    display: block;
+   font-size: 1rem;
 }
 
 .card-faq-questions .text-questions .title:hover{
@@ -84,7 +90,7 @@ body{
 
 .card-faq-questions .text-description .text-info{
     color: var(--purple-600);
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding-bottom: 20px;
 }
 
@@ -100,7 +106,7 @@ picture img{
 
 picture img{
     object-fit: cover;
-    height: 320px;
+    height: clamp(150px, 45vw, 420px);
 }
 
 hr{
@@ -109,11 +115,110 @@ hr{
     background-color: #eee;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1024px){
+    .card-faq h1{
+        font-size: 2.5rem;
+    }
+
+    .card-faq img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 
     .card .card-faq{
         max-width: 100%;
-        min-height: 600px;
+        height: auto;
+        padding: 35px;
+        bottom: 35px;
+    }
+
+    .card-faq-questions .text-questions .title{
+        font-size: 0.9rem;
+    }
+
+    .card-faq-questions .text-description .text-info{ 
+    font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card-faq h1{
+        font-size: 2rem;
+    }
+
+    .card-faq img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .card .card-faq{
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        bottom: 30px;
+    }
+
+    .card-faq-questions .text-questions .title{
+        font-size: 0.8rem;
+    }
+
+    .card-faq-questions .text-description .text-info{ 
+    font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .card-faq h1{
+        font-size: 1.5rem;
+    }
+
+    .card-faq img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .card .card-faq{
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        bottom: 25px;
+    }
+
+    .card-faq-questions .text-questions .title{
+        font-size: 0.75rem;
+    }
+
+    .card-faq-questions .text-description .text-info{ 
+    font-size: 0.75rem;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+
+    .card-faq h1{
+        font-size: 1rem;
+    }
+
+    .card-faq img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .card .card-faq{
+        max-width: 100%;
+        height: auto;
+        padding: 5px;
+        bottom: 20px;
+    }
+
+    .card-faq-questions .text-questions .title{
+        font-size: 0.75rem;
+    }
+
+    .card-faq-questions .text-description .text-info{ 
+    font-size: 0.75rem;
     }
 
 }
