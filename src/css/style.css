@@ -12,12 +12,12 @@ html{
 body{
     font-family: 'Work Sans', sans-serif;
     background-color: var(--purple-100);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .container{
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .card{
